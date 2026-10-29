@@ -41,7 +41,7 @@ Musk is a supporter of global far-right politics, figures, and political parties
     llm = ChatOpenAI(temperature=0, model="gpt-5.5")
     # llm = ChatOllama(temperature=0, model="gemma3:270m") # for local testing
     chain = summary_prompt | llm
-    response = chain.invoke({"information": information})
+    response = chain.invoke({"info": information})
     print(response.content)
    
 
